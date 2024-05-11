@@ -1,0 +1,18 @@
+
+.content{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 320px) {
+    .content{
+        font-size: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:90%;
+    }
+}
