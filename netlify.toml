@@ -4,12 +4,12 @@
   publish = "dist/angular-universal-pre-render/browser"
 
 [images]
-  remote_images = ["https://images.unsplash.com/.*", "" ]
+  remote_images = ["https://images.unsplash.com/.*", ]
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-https://ik.imagekit.io/*
+  
 [functions]
   directory = "functions/"
