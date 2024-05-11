@@ -1,15 +1,10 @@
-[build]
-  command = "npm run prerender"
-  functions = "./functions"
-  publish = "dist/angular-universal-pre-render/browser"
-
 [images]
-  remote_images = ["https://images.unsplash.com/.*", ]
+  remote_images = ["https://images.unsplash.com/.*"]
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  
+
 [functions]
   directory = "functions/"
