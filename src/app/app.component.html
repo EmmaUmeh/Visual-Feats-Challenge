@@ -1,16 +1,18 @@
-<div class="content">
-  <div class="">
-    <h1>{{ title }}</h1>
-    <!-- Use the standard <img> tag for displaying the image -->
-    <img [src]="imageUrl" alt="Moon">
-  </div>
-  <!-- Assuming you want to display a list of items -->
-  <div class="right-side">
-    <div class="pill-group">
-      <div *ngFor="let item of [{ title: 'Visual Feats Image Gallery' }]">
-        {{ item.title }}
+  <div class="content">
+    <div class="">
+      <h1>{{ title }}</h1>
+      
+    </div>
+    <!-- <div class="divider" role="separator" aria-label="Divider"></div> -->
+    <div class="right-side">
+      <div class="pill-group">
+        @for (item of [
+          { title: 'Visual Feats Image Gallery' }
+        ]; track item.title) {
+        }
       </div>
+
     </div>
   </div>
-</div>
-<router-outlet></router-outlet>
+
+<router-outlet />
